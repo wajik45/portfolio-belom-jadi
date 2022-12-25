@@ -8,6 +8,7 @@ rgb(100, 116, 139);
 */
 :root {
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
@@ -42,6 +43,7 @@ nav a {
     background-color: rgba(255,255,255,.8);
     position: fixed;
     backdrop-filter: blur(3px);
+    z-index: 99;
 }
 nav {
     height: 80px;
@@ -299,7 +301,6 @@ nav .logo:hover {
     align-self: center;
     position: absolute;
     top: 0;
-    margin-left: 6%;
 }
 .about .projek {
     width: 150px;
@@ -338,7 +339,7 @@ nav .logo:hover {
         min-height: 70rem;
     }
     .about .kotak {
-        min-height: 60rem;
+        min-height: 50rem;
     }
     .about .kotak-dua {
         flex-wrap: wrap;
@@ -348,7 +349,12 @@ nav .logo:hover {
         max-width: 40rem;
     }
     .about .dua {
+        min-height: 20rem;
         max-width: 40rem;
+        justify-content: space-between;
+    }
+    .about .a-projek {
+        margin-left: 6%;
     }
 }
 /* Akhir About */
